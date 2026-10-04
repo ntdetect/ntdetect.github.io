@@ -1,0 +1,152 @@
+body {
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    padding: 0px 5px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    background-image: url('/assets/img/vista-bg.jpg');
+    cursor: url('/assets/img/normal.cur') 0 0, auto;
+}
+
+p, span, h1, h2, h3, h4, h5, h6 {
+    cursor: url('/assets/img/ibeam.cur') 0 0, auto;
+}
+
+a:hover, button:hover {
+    cursor: url('/assets/img/link.cur') 0 0, auto;
+}
+
+.body-content {
+    max-width: 962px;
+    margin: -3px auto;
+    padding: 5px;
+}
+
+header {
+    backdrop-filter: blur(12px);
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    text-shadow: 0em 0.1em 1em #ffffff;
+    padding: 15px;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-bottom: 25px;
+    background-image: url('/assets/img/Taskbar_texture_bottom.png');
+    background-size: cover;
+    mask-image: linear-gradient(to right, transparent, black 3%, black 93%, transparent);
+    margin-top: -9.5px;
+    margin-bottom: -15px;
+}
+
+header img {
+    vertical-align: center;
+    width: 100px;
+    object-fit: cover;
+}
+
+.header-main {
+    font-weight: normal;
+    font-size: 32px;
+}
+
+.header-image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.header-image-wrapper img {
+    display: block;
+    object-fit: cover;
+}
+
+.header-image-overlay {
+    width: 150px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: -25px;
+    margin-left: -25px;
+}
+
+.content {
+    backdrop-filter: blur(7px);
+    margin-top: 20px;
+    padding: 3px 16px;
+    background-color: rgba(220, 234, 255, 0.45);
+    border-radius: 8px;
+    box-shadow: 
+	0 10px 30px rgba(0, 0, 0, 0.25),
+	inset 0 1px 0 rgba(255, 255, 255, 0);
+    border: 1px solid #00000032;
+    text-shadow: 0px 0.1em 1.5em #ffffff; 
+}
+
+.navbar {
+    margin-top: 15px;
+    background: #050A0F;
+    background: linear-gradient(0deg, rgba(5, 10, 15, 1) 37%, rgba(160, 162, 164, 1) 100%);
+    color: #fff;
+    border-radius: 4px;
+    box-shadow: 0em 0.1em 0.35em #00000048;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    margin-bottom: -5px;
+}
+
+.navbar ul, .navbar ul li, .navbar li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0px 15px;
+}
+
+.navbar a, .navbar a:link, .navbar a:visited {
+    padding: 8px;
+    color: #fff;
+    transition: 0.15s linear;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    text-shadow: 0em 0.1em 0.35em #000000ab;
+}
+
+.navbar a:hover {
+    transition: 0.15s linear;
+    border-radius: 8px;
+    color: #61afef;
+}
+
+button:hover {
+    transition: 1s linear;
+    background: #EAF6FD;
+    background: linear-gradient(180deg, rgba(234, 246, 253, 1) 50%, rgba(167, 217, 245, 1) 100%);
+    border: 1px solid #3c7fb1;
+}
+
+button {
+    transition: 1s linear;
+    background: #F0F0F0;
+    background: linear-gradient(180deg, rgba(240, 240, 240, 1) 50%, rgba(209, 209, 209, 1) 100%);
+    border: 1px solid #707070;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+button:active {
+    transition: 1s linear;
+    background: #D8EEFA;
+    background: linear-gradient(180deg, rgba(216, 238, 250, 1) 50%, rgba(109, 181, 220, 1) 100%);
+    border: 1px solid #2c628b;
+}
+
+a button {
+    text-decoration: none;
+    color: black;
+}
+
+.footer {
+    text-align: center;
+}
