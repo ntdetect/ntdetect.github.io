@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A Dual Socket Workstation, with 32GB of RAM... from 2006!?" />
+    <meta name="author" content="NTdetect" />
+    <meta name="keywords" content="ntdetect" />
+    
+    <!-- OpenGraph stuff -->
+    <meta property="og:title" content="Dual Xeon Powerhouse - The Dell Precision 490" />
+    <meta property="og:image" content="/assets/img/blog/DellPrecision490/P490-MB.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:description" content="A Dual Socket Workstation, with 32GB of RAM... from 2006!?" />
+    <meta property="og:site_name" content="NTdetect" />
+    <meta property="og:locale" content="en_GB" />
+
+    <title>Dual Xeon Powerhouse - Dell Precision 490 • NTdetect</title>
+    <link rel="stylesheet" href="/assets/css/base.css" type="text/css" />
+    <link rel="icon" href="/assets/img/favicon.ico" type="image/png" />
+  </head>
+
+  <body onLoad="TaglineTicker();">
+    <div class="body-content">
+      <header>
+	<div class="header-image-wrapper">
+	  <img src="https://avatars.githubusercontent.com/u/277156918?v=4" alt="NTdetect's Profile Picture" />
+	  <img src="/assets/img/image-overlay.png" class="header-image-overlay" />
+	</div>
+	<p>
+	  <b class="header-main">NTdetect</b><br>
+	  <span id="taglineticker-tag">It's a bit like dreaming underwater.</span>
+	</p>
+      </header>
+
+      <div class="navbar">
+	<ul>
+	  <a href="/"><li>Home</li></a>
+	  <a href="https://youtube.com/@ntdetect"><li>YouTube</li></a>
+	  <a href="https://github.com/ntdetect"><li>GitHub</li></a>
+	  <a href="https://twitch.tv/ntdetect"><li>Twitch</li></a>
+	  <a href="https://bsky.app/profile/ntdetect.bsky.social"><li>Bluesky</li></a>
+	  <a href="https://archive.org/details/@ntdetect"><li>archive.org</li></a>
+	</ul>
+      </div>
+
+      <div class="content">
+	<h1>Dual Xeon Powerhouse - Dell Precision 490</h1>
+
+	<h3>Navigation</h3>
+	<ul>
+	  <li><a href="#introduction">Introduction</a></li>
+	  <li><a href="#specs">Specs &amp; Software</a></li>
+	  <li><a href="#performance">Performance</a></li>
+	  <ul>
+	    <li><a href="#cinebench-r10">Cinebench R10 Results</a></li>
+	    <li><a href="#general-tasks">General Tasks</a></li>
+	  </ul>
+	  
+	  <li><a href="#conclusion">Closing Thoughts &amp; Conclusion</a></li>
+	</ul>
+
+	<h2 id="introduction">Introduction</h2>
+	<p>
+	  Recently I was looking on Facebook Marketplace, hate the platform but you do sometimes find some interesting things
+	  on there, and I came across a seemingly normal looking Dell, and I assumed it would have like a Core 2 Duo or Quad, or
+	  if I was lucky maybe even a Core 2 Extreme. I did no research on the machine in the picture, I just sent the guy a message
+	  and went and picked it up. He also gave me a Samsung R20 laptop that he was going to get rid of and asked me if I wanted it
+	  too, so extra laptop acquired.
+	</p>
+
+	<p>
+	  At this point, I still have no idea about this machine, it's only when I get home and open it do I realise what I have
+	  accidentally bought. The first thing I notice, obviously, was the unpopulated LGA771 socket, with it's socket cover still
+	  on, and then I notice the 8 DDR2 ECC RAM Slots, of which only 2 are populated (with a measly 2GB).
+	</p>
+
+	<p>
+	  Now, I have to know more about this thing, and obviously after you have bought the machine is the correct time to do research.
+	  Obviously. So I did the research, went on to eBay and bought some parts for this thing.
+	</p>
+
+	<h2 id="specs">Specs &amp; Software</h2>
+	<p>
+	  Originally, this machine came with a single <a href="https://www.techpowerup.com/cpu-specs/xeon-5060.c381">Intel Xeon 5060</a> @
+	  3.2GHz, a 2C/4T CPU. Not anything spectacular, but not anything awful either. Perfectly average. And as for RAM, it had 2GB of
+	  DDR2 ECC. Software wise, it had nothing, but the COA sticker says <i>X11-45371</i>, which corrosponds to Windows XP Professional (x86)
+	</p>
+
+	<p>
+	  So, after I did some money spending on eBay, the specs of this PC are just a tad better now:
+	</p>
+
+	<ul>
+	  <li><b>CPU</b> - 2x <a href="https://www.techpowerup.com/cpu-specs/xeon-x5355.c3489">Intel Xeon X5355</a> (4C/4T)</li>
+	  <li><b>RAM</b> - 32GB DDR2 ECC (8x 4GB)</li>
+	  <li><b>GPU</b> - <a href="https://www.techpowerup.com/gpu-specs/quadro-nvs-285.c1454">NVIDIA Quadro NVS 285</a> (Not great)</li>
+	  <li><b>Sound Card</b> - Creative SoundBlaster X-Fi</li>
+	  <li><b>HDD</b> - 1TB Samsung SATA HDD</li>
+	  <li><b>OS</b> - Windows XP Professional, x64 Edition, Service Pack 2</li>
+	  <li><b>PSU</b> - Original 750W PSU</li>
+	  
+	</ul>
+
+	<div class="post-img-container">
+	  <img src="/assets/img/blog/DellPrecision490/P490-MB.png"
+	       alt="Picture of the motherboard, with both sockets and all RAM slots filled"
+	       title="Picture of the motherboard, with both sockets and all RAM slots filled"
+	       class="post-img" />
+	</div>
+	
+	<p>
+	  Some might call this a slight upgrade. But I call it 'The Power Consumer', as the CPUs have a TDP of 120W <b>each</b>, with
+	  a max power draw of <b>177W EACH</b>. You may be thinking why I didn't upgrade the GPU too? Simple answer - I am unfamiliar with, specifically
+	  workstation cards from 2006, so I would need to do some more research before I commit to buying a GPU for this thing. If I so desire
+	  to use this for something serious, I can swap the NVS out for an ATI Radeon 3800 HD that I have from when I upgraded my XPS 420.
+	</p>
+
+	<p>
+	  The hardest thing was getting the SATA controller working in the installer, as Windows XP, for some reason, requires extra drivers to be
+	  loaded by floppy disk. Which is fine, I have plenty, but this computer doesn't have a floppy drive. It has the controller but my particular
+	  one was never optioned with one. Finding a working AHCI driver was also an unusually difficult task.
+	</p>
+
+	<h2 id="performance">Performance</h2>
+	<p>
+	  Performance is, as you would expect, amazing. It's let down a lot by the Quadro NVS 285, which is really designed to just drive
+	  monitors, and not intended for any heavy lifting. I think with more research into Quadro cards of the era, I could make this a true
+	  powerhouse from 2006.
+	</p>
+
+	<h3 id="cinebench-r10">Cinebench R10 Results</h3>
+	<p>
+	  The first thing I did when I got an operating system installed on this was run Cinebench R10, I use R10 because it works on Windows 2000+, and then when
+	  I put the new X5355's in, I ran the test again.
+	</p>
+
+	<div class="post-img-container">
+	  <img src="/assets/img/blog/DellPrecision490/CinebenchResults.png"
+	       alt="Screenshot of the Cinebench R10 results page"
+	       title="Cinebench R10 Database Tab"
+	       class="post-img" />
+	</div>
+
+	<p>
+	  With the GPU test, there was a minor difference, but not enough to consider 'significant'. However, the CPU tasks there was a significant improvement.
+	  For example, the multi-thread run took less than 1 minute at just 52 seconds. For a couple of CPUs from the mid/late 2000s, that's not bad. In my opinion
+	  anyway.
+	</p>
+
+	<h3 id="general-tasks">General Tasks</h3>
+	<p>
+	  General tasks, such as file management, and more "normie" focused things, such as word processing is fine. To be honest it would be fine on the Samsung R20
+	  I mentioned at the start. There's nothing particularly remarkable about that laptop, it has an Intel Core Duo and 2.5GB of RAM. You certainly don't need this
+	  workstation for it.
+	</p>
+
+	<p>
+	  However, some other tasks that would not go so well on that Samsung R20 laptop are software development and modern web browsing.
+	</p>
+
+	<p>
+	  Software development is a bit weird on this. Not because of any hardware issue, but because to get full use of the 32GB of RAM, you need to be using
+	  Windows XP x64 Edition (different than 64-bit Edition, it's a whole thing). And the majority of Windows XP machines are Windows XP x86. Not a huge deal
+	  but it is something that I had to keep in mind whilst doing things. I really only wanted to do one thing. And that is to use <i>Visual Studio .NET 2003</i>
+	  to build a basic GLCube demo for the Original XBOX. So, how did this go?
+	</p>
+
+	<p>
+	  For testing web browsing, as I figured there's enough horsepower in this thing to be able to do that, I used
+	  <a href="https://www.supermium.net/">Supermium</a>, which is a port of Google Chromium to legacy systems, such as Windows XP. Normally on old OSes
+	  I like to use <a href="https://eclipse.cx/projects/r3dfox">Eclipse r3dfox</a>, but it doesn't work on XP, only Vista and above. And internet performance...
+	  wasn't great. Don't get me wrong it could do basic web browsing, such as Google searches, viewing Bluesky, and reading Wikipedia. But if you wanted to
+	  watch YouTube, you were at 20-25fps at best on 480p. 720p60 you were at 30 if you're lucky. I think this is because Google Chromium, and by extension Supermium,
+	  uses GPU acceleration and because the GPU in this thing is designed just to drive some monitors, it makes it a pretty sub-par YouTube experience. Maybe with
+	  a different GPU, even a consumer oriented one such as the ATI Radeon HD 3800 from the XPS 420, or a GTX 260 that's currently <i>in</i> the XPS 420. But not with the
+	  NVS 285.
+	</p>
+
+	<p>
+	  Supermium, however, isn't the only web browser available. While Eclipse r3dfox may not work, they do have another browser that is designed to work with Windows
+	  XP, and it's called <a href="https://eclipse.cx/projects/lun3r">Lun3r</a>, and it is essnetially a fork of Pale Moon for XP, and because of this - it isn't GPU
+	  accelerated. And performance in this browser is... Significantly better, YouTube playback is better, smoother and general web browsing is better. Some CSS things
+	  don't work, such as the blur on the background of this panel, but for the most part, it's pretty good.
+	</p>
+
+	<h2 id="conclusion">Closing Thoughts &amp; Conclusion</h2>
+	<p>
+	  My final thoughts on this machine are that it's funny. It's funny to have such a large amount of power, both in terms of CPU and RAM capacity, in a computer
+	  from 2006, that shipped with Windows XP. It could be better. A lot better, frankly. It's mostly let down by the NVIDIA Quadro NVS 285, and I think with a
+	  real graphics card, it would probably be capable of a lot more. The NVS 285 is less of a "graphics processor" and more "VGA Port for your PCIe Slot". Much like
+	  the NVIDIA GeForce GT 710, and other low end graphics cards. Maybe I'll upgrade it at some point.
+	</p>
+	
+	<hr>
+	<div class="footer">
+	  <p>
+	    &copy; 2026 &mdash; NTdetect
+	  </p>
+	  
+	  <p>
+	    <a href="https://enfys.wales" title="oomf"><img src="/assets/img/88x31/enfys.png" /></a>
+	    <a href="https://wamwoowam.co.uk"><img src="/assets/img/88x31/wamwoowam.png" /></a>
+	    <a href="https://figgy.oops.wtf"><img src="/assets/img/88x31/figgy.gif" /></a>
+	    <a href="/"><img src="/assets/img/88x31/ntdetect.png" /></a>
+	  </p>
+	</div>
+      </div>
+    </div>
+  </body>
+</html>

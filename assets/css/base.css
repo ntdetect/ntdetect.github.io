@@ -1,3 +1,46 @@
+@font-face {
+  font-family: 'Calibri';
+  src: url('/assets/fonts/calibri.ttf');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Calibri';
+  src: url('/assets/fonts/calibrii.ttf');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Calibri';
+  src: url('/assets/fonts/calibrib.ttf');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: thinl;
+    scrollbar-color: #7289daAA black;
+}
+
+header, .content, .navbar {
+    backdrop-filter: blur(2px);
+    background-color: #00000092;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 
+	0 10px 30px rgba(0, 0, 0, 0.25),
+	inset 0 1px 0 rgba(255, 255, 255, 0);
+    border: 1px solid #00000032;
+    text-shadow: 0px 0.1em 1.5em #ffffff64; 
+}
+
+
 body {
     font-family: "Segoe UI", Tahoma, sans-serif;
     padding: 0px 5px;
@@ -7,15 +50,6 @@ body {
     background-attachment: fixed;
     min-height: 100vh;
     background-image: url('/assets/img/vista-bg.jpg');
-    cursor: url('/assets/img/normal.cur') 0 0, auto;
-}
-
-p, span, h1, h2, h3, h4, h5, h6 {
-    cursor: url('/assets/img/ibeam.cur') 0 0, auto;
-}
-
-a:hover, button:hover {
-    cursor: url('/assets/img/link.cur') 0 0, auto;
 }
 
 .body-content {
@@ -24,21 +58,17 @@ a:hover, button:hover {
     padding: 5px;
 }
 
+
 header {
-    backdrop-filter: blur(12px);
+    text-shadow: 0px 0.1em 1.5em #ffffffAB !important;
     display: flex;
     align-items: center;
-    gap: 32px;
-    text-shadow: 0em 0.1em 1em #ffffff;
-    padding: 15px;
-    padding-top: 20px;
-    padding-left: 40px;
-    padding-bottom: 25px;
-    background-image: url('/assets/img/Taskbar_texture_bottom.png');
-    background-size: cover;
-    mask-image: linear-gradient(to right, transparent, black 3%, black 93%, transparent);
-    margin-top: -9.5px;
-    margin-bottom: -15px;
+    gap: 25px;
+    padding: 20px;
+    border-radius: 0px 0px 8px 8px;
+    margin-top: -10px;
+    margin-bottom: 0px;
+    color: white;
 }
 
 header img {
@@ -72,22 +102,17 @@ header img {
 }
 
 .content {
+    font-family: "Calibri", "Helvetica", sans-serif;
     backdrop-filter: blur(7px);
     margin-top: 20px;
     padding: 3px 16px;
-    background-color: rgba(220, 234, 255, 0.45);
-    border-radius: 8px;
-    box-shadow: 
-	0 10px 30px rgba(0, 0, 0, 0.25),
-	inset 0 1px 0 rgba(255, 255, 255, 0);
-    border: 1px solid #00000032;
-    text-shadow: 0px 0.1em 1.5em #ffffff; 
+
 }
 
 .navbar {
     margin-top: 15px;
-    background: #050A0F;
-    background: linear-gradient(0deg, rgba(5, 10, 15, 1) 37%, rgba(160, 162, 164, 1) 100%);
+    background-color: #00000092;
+    backdrop-filter: blur(7px);
     color: #fff;
     border-radius: 4px;
     box-shadow: 0em 0.1em 0.35em #00000048;
@@ -102,6 +127,8 @@ header img {
     list-style-type: none;
     display: inline-block;
     padding: 0px 15px;
+    text-shadow: 0px 0.1em 1.5em #ffffff; 
+    
 }
 
 .navbar a, .navbar a:link, .navbar a:visited {
@@ -116,37 +143,61 @@ header img {
 .navbar a:hover {
     transition: 0.15s linear;
     border-radius: 8px;
-    color: #61afef;
-}
-
-button:hover {
-    transition: 1s linear;
-    background: #EAF6FD;
-    background: linear-gradient(180deg, rgba(234, 246, 253, 1) 50%, rgba(167, 217, 245, 1) 100%);
-    border: 1px solid #3c7fb1;
+    color: #7289da;
 }
 
 button {
-    transition: 1s linear;
-    background: #F0F0F0;
-    background: linear-gradient(180deg, rgba(240, 240, 240, 1) 50%, rgba(209, 209, 209, 1) 100%);
-    border: 1px solid #707070;
-    padding: 5px;
+    background-color: #00000064;
+    color: white;
+    backdrop-filter: blur(2px);
+    transition: 0.15s linear;
+    padding: 8px;
     border-radius: 4px;
+    border: 1px solid #00000032;
+}
+
+button:hover {
+    border: 1px solid #c768dd;
+    transition: 0.15s linear;
+    cursor: pointer;
 }
 
 button:active {
-    transition: 1s linear;
-    background: #D8EEFA;
-    background: linear-gradient(180deg, rgba(216, 238, 250, 1) 50%, rgba(109, 181, 220, 1) 100%);
-    border: 1px solid #2c628b;
+    transition: 0.15s fade-in-out;
+    background-color: #c768dd;
+    border: 1px solid black;
+    color: black;
 }
 
 a button {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .footer {
     text-align: center;
+}
+
+.post-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-img {
+    border-radius: 8px;
+    box-shadow: 0em 0.1em 0.35em black;
+    width: 75%;
+    text-align: center;
+}
+
+.content a:hover {
+    color: #c768dd !important;
+    transition: 0.15s linear;
+    text-shadow: 0px 0.1em 1em #c768dd;
+}
+
+a, a:visited {
+    transition: 0.15s linear;
+    color: #7289da;
 }
